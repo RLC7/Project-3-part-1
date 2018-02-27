@@ -36,3 +36,53 @@ file  = open('local_copy.log', 'r').read()
 date3  = ('03/Jan')
 count2 = file.count(date3)
 print("Requests for Jan 3rd:", count3)
+
+
+#months
+Month  = ('Jan')
+countJAN = file.count(Month)
+print("Requests for Janurary:", countJAN)
+
+Month2  = ('Feb')
+countFEB = file.count(Month2)
+print("Requests for February:", countFEB)
+
+Month3  = ('Mar')
+countMAR = file.count(Month3)
+print("Requests for March:", countMAR)
+
+Month4  = ('Apr')
+countAPR = file.count(Month4)
+print("Requests for April:", countAPR)
+
+Month5  = ('May')
+countMAY = file.count(Month5)
+print("Requests for May:", countMAY)
+
+Month6  = ('Jun')
+countJUN = file.count(Month6)
+print("Requests for June:", countJUN)
+
+Month7  = ('Jul')
+countJUL= file.count(Month7)
+print("Requests for July:", countJUL)
+
+Month8  = ('Aug')
+countAUG = file.count(Month8)
+print("Requests for August:", countAUG)
+
+Month9  = ('Sep')
+countSEP = file.count(Month9)
+print("Requests for September:", countSEP)
+
+Month10  = ('Oct')
+countOCT = file.count(Month10)
+print("Requests for October:", countOCT)
+
+Month11  = ('Nov')
+countNOV = file.count(Month11)
+print("Requests for November:", countNOV)
+
+Month12  = ('Dec')
+countDEC = file.count(Month12)
+print("Requests for December:", countDEC)
