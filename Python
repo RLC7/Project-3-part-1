@@ -18,3 +18,21 @@ with open(fname, 'r') as f:
 print('Log file accessed:')
 print('   ')
 print('Total requests made:', num_lines)
+print('   ')
+
+#Date counting
+
+file  = open('local_copy.log', 'r').read()
+date1  = ('01/Jan')
+count1 = file.count(date1)
+print("Requests for Jan 1st:", count1)
+
+file  = open('local_copy.log', 'r').read()
+date2  = ('02/Jan')
+count2 = file.count(date2)
+print("Requests for Jan 2nd:", count2)
+
+file  = open('local_copy.log', 'r').read()
+date3  = ('03/Jan')
+count2 = file.count(date3)
+print("Requests for Jan 3rd:", count3)
