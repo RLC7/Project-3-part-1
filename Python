@@ -86,3 +86,18 @@ print("Requests for November:", countNOV)
 Month12  = ('Dec')
 countDEC = file.count(Month12)
 print("Requests for December:", countDEC)
+
+#percents
+import re
+fh = open('local_copy.log')
+for line4 in fh:
+    if re.search(r" 4[00 ][04 ][03 ][01 ][02 ]",line4):
+        print(line4.rstrip())
+fh.close()
+
+import re
+fh = open('local_copy.log')
+for line3 in fh:
+    if re.search(r" 3[00 ][04 ][03 ][01 ][02 ]",line3):
+        print(line3.rstrip())
+fh.close()
