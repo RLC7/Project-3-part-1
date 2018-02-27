@@ -15,6 +15,7 @@ local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE)
 fname = 'local_copy.log'
 num_lines = 0
 with open(fname, 'r') as f:
+
     for line in f:
         num_lines += 1
 print(' ')
@@ -36,58 +37,68 @@ print("Requests for Jan 3:", count3)
 team4  = ('04/Jan')
 count4 = file.count(team4)
 print("Requests for Jan 4:", count4)
-print("You would typically do a for loop for each month and day but I did not want to hard type the code")
+
+team5  = ('05/Jan')
+count5 = file.count(team4)
+print("Requests for Jan 5:", count5)
+
+team6  = ('06/Jan')
+count6 = file.count(team6)
+print("Requests for Jan 6:", count6)
+
+team7  = ('07/Jan')
+count7 = file.count(team7)
+print("Requests for Jan 7:", count7)
+
 #For each month
 print(" ")
 print("This is the amount of request for months")
 
-team5  = ('Jan')
-count5 = file.count(team5)
-print("Requests for Janurary:", count5)
+#months
+Month  = ('Jan')
+countJAN = file.count(Month)
+print("Requests for Janurary:", countJAN)
 
-team6  = ('Feb')
-count6 = file.count(team6)
-print("Requests for February:", count6)
+Month2  = ('Feb')
+countFEB = file.count(Month2)
+print("Requests for February:", countFEB)
 
-team7  = ('Mar')
-count7 = file.count(team7)
-print("Requests for March:", count7)
+Month3  = ('Mar')
+countMAR = file.count(Month3)
+print("Requests for March:", countMAR)
 
-team8  = ('Apr')
-count8 = file.count(team8)
-print("Requests for April:", count8)
+Month4  = ('Apr')
+countAPR = file.count(Month4)
+print("Requests for April:", countAPR)
 
-team9  = ('May')
-count9 = file.count(team9)
-print("Requests for May:", count9)
+Month5  = ('May')
+countMAY = file.count(Month5)
+print("Requests for May:", countMAY)
 
-team10  = ('Jun')
-count10 = file.count(team10)
-print("Requests for June:", count10)
+Month6  = ('Jun')
+countJUN = file.count(Month6)
+print("Requests for June:", countJUN)
 
-team11  = ('Jul')
-count11= file.count(team11)
-print("Requests for July:", count11)
+Month7  = ('Jul')
+countJUL= file.count(Month7)
+print("Requests for July:", countJUL)
 
-team12  = ('Aug')
-count12 = file.count(team12)
-print("Requests for August:", count12)
+Month8  = ('Aug')
+countAUG = file.count(Month8)
+print("Requests for August:", countAUG)
 
-team13  = ('Sep')
-count13 = file.count(team13)
-print("Requests for September:", count13)
+Month9  = ('Sep')
+countSEP = file.count(Month9)
+print("Requests for September:", countSEP)
 
-team14  = ('Oct')
-count14 = file.count(team14)
-print("Requests for October:", count14)
+Month10  = ('Oct')
+countOCT = file.count(Month10)
+print("Requests for October:", countOCT)
 
-team15  = ('Nov')
-count15 = file.count(team15)
-print("Requests for November:", count15)
+Month11  = ('Nov')
+countNOV = file.count(Month11)
+print("Requests for November:", countNOV)
 
-team16  = ('Dec')
-count16 = file.count(team16)
-print("Requests for December:", count16)
-
-
-print("I am sorry, this is the best I can do.")
+Month12  = ('Dec')
+countDEC = file.count(Month12)
+print("Requests for December:", countDEC)
