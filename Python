@@ -1,7 +1,6 @@
-#project 3
-
 from urllib.request import urlretrieve
-URL_PATH ='https://s3.amazonaws.com/tcmg476/http_access_log'
+
+URL_PATH = 'https://s3.amazonaws.com/tcmg476/http_access_log'
 LOCAL_FILE = 'local_copy.log'
 
 # Use urlretrieve() to fetch a remote copy and save into the local file path
@@ -10,33 +9,50 @@ local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE)
 # Alt.: supply an anonmymous callback function to print a simple progress bar to screen
 #local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True))
 
+# Alt. 2: a progress bar with reduced output (every 1000 blocks)
+#local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE, lambda x,y,z: print('.', end='', flush=True) if x % 100 == 0 else False)
+
 fname = 'local_copy.log'
 num_lines = 0
 with open(fname, 'r') as f:
-        for line in f:
-            num_lines += 1
-print('Log file accessed:')
-print('   ')
-print('Total requests made:', num_lines)
-print('   ')
 
-#Date counting
+    for line in f:
+        num_lines += 1
+print(' ')
+print("Total requests during this time period in the log:", num_lines)
 
 file  = open('local_copy.log', 'r').read()
-date1  = ('01/Jan')
-count1 = file.count(date1)
-print("Requests for Jan 1st:", count1)
+team1  = ('01/Jan')
+count1 = file.count(team1)
+print("Requests for Jan 1:", count1)
 
-file  = open('local_copy.log', 'r').read()
-date2  = ('02/Jan')
-count2 = file.count(date2)
-print("Requests for Jan 2nd:", count2)
+team2  = ('02/Jan')
+count2 = file.count(team2)
+print("Requests for Jan 2:", count2)
 
-file  = open('local_copy.log', 'r').read()
-date3  = ('03/Jan')
-count2 = file.count(date3)
-print("Requests for Jan 3rd:", count3)
+team3  = ('03/Jan')
+count3 = file.count(team3)
+print("Requests for Jan 3:", count3)
 
+team4  = ('04/Jan')
+count4 = file.count(team4)
+print("Requests for Jan 4:", count4)
+
+team5  = ('05/Jan')
+count5 = file.count(team4)
+print("Requests for Jan 5:", count5)
+
+team6  = ('06/Jan')
+count6 = file.count(team6)
+print("Requests for Jan 6:", count6)
+
+team7  = ('07/Jan')
+count7 = file.count(team7)
+print("Requests for Jan 7:", count7)
+
+#For each month
+print(" ")
+print("This is the amount of request for months")
 
 #months
 Month  = ('Jan')
